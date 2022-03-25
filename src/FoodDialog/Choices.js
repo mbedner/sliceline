@@ -1,20 +1,20 @@
 import React from "react";
-import styledComponents from "styled-components";
+import styled from "styled-components";
 
 const CursorPointer = `cursor: pointer`;
 
-const RadioInput = styledComponents.input`
+const RadioInput = styled.input`
   ${CursorPointer}
 `;
 
-const Label = styledComponents.label`
+const Label = styled.label`
   ${CursorPointer}
 `;
 
 export function Choices({ openFood, choiceRadio }) {
   return (
     <>
-      <h3>Choose One</h3>
+      <h3>Choose one</h3>
       {openFood.choices.map((choice) => (
         <>
           <RadioInput

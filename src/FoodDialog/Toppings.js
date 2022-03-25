@@ -20,7 +20,13 @@ export function Toppings({ toppings, checkTopping }) {
     <ToppingGrid>
       {toppings.map((topping, i) => (
         <CheckboxLabel>
-          <ToppingCheckbox type="checkbox" onClick={() => checkTopping(i)} />
+          <ToppingCheckbox
+            type="checkbox"
+            checked={topping.checked}
+            onClick={() => {
+              checkTopping(i);
+            }}
+          />
           {topping.name}
         </CheckboxLabel>
       ))}
