@@ -6,4 +6,5 @@ export const Banner = styledComponents.div`
     background-position: center;
     background-size: cover;
     filter: contrast(75%);
+
 `;
